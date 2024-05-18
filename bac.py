@@ -10,14 +10,17 @@ app.secret_key = "secret key"
 
 @app.route('/')
 @app.route('/home')
-def home(name=None):
-    return render_template('home.html', name=name)
+def home():
+    if "patient" in flask_session:
+        data = json.loads(flask_session["patient_data"])
+        return render_template('home.html', patient_data=data)
+    else:  
+        return render_template('home.html', patient_data=None)
 
 
 @app.route('/user')
 def User():
     if "patient" in flask_session:
-        print(type(flask_session["patient_data"]))
         data = json.loads(flask_session["patient_data"])
         return render_template('user.html', patient_data=data)
     else:
