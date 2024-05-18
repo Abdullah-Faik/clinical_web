@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Website</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+    <header>
+        <div class="headerclass">
+            <nav class=".navbar">
+                <img src="/static/img/Medical.png" alt="Medical logo" />
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="service">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="signbutton">
+                    <a href="signin"><button class="btn-signin">Sign In</button></a>
+                    <a href="signup"><button class="btn-signup">Sign Up</button></a>
+                    </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <h1>Welcome To Our Clinic</h1>
+            <h2 class="openhour">Our Opening Hours</h2>
+            <pre><p>
+                Monday to Friday: 9:00 AM to 6:00 PM
+                Saturday: 10:00 AM to 4:00 PM
+                Sunday: Closed
+
+                Holiday Hours:
+                Please note that on [specific holiday date], our clinic will be open from 10:00 AM to 2:00 PM.
+
+                Please call ahead for appointments or inquiries.</p></pre>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus velit. Iusto deserunt tempore
+                quos quas aperiam autem odit ea, dignissimos laudantium quibusdam rerum, expedita officiis dicta! Modi,
+                vero nesciunt.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

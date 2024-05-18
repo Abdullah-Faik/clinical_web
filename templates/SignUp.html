@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+    <header>
+        <div class="headerclass">
+            <nav class=".navbar">
+                <img src="/static/img/Medical.png" alt="Medical logo" />
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="service">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="signin"><button class="btn-signin">Sign In</button></a>
+                <a href="signup"><button class="btn-signup">Sign Up</button></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="register-form">
+                <form action="#" method="post">
+                    <h2>Sign Up</h2>
+                    <div class="input-box">
+                        <!-- <label for="name">Your Name:</label> -->
+                        <input type="text" id="name" name="name" placeholder="Name" required autofocus>
+                    </div>
+                    <div class="input-box">
+                        <!-- <label for="dob">Date of Birth:</label> -->
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="input-box">
+                            <label for="GENDER">GENDER</label>
+                            <select id="gender" name="gender">
+                                <option value="male">MALE</option>
+                                <option value="female">FEMALE</option>
+                            </select>
+                    </div>
+                    <div class="input-box">
+                        <!-- <label for="phone">Phone Number:</label> -->
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="Phone Number ###-###-####" required>
+                    </div>
+                    <div class="input-box">
+                        <!-- <label for="address">Address:</label> -->
+                        <input type="text" id="address" name="address" placeholder="Address" required>
+                    </div>
+                    <div class="input-box">
+                        <!-- <label for="doctor">Doctor Name:</label> -->
+                        <input type="email" id="email" name="email" placeholder="email@gmail.com" required>
+                    </div>
+                    <div class="input-box">
+                        <!-- <label for="doctor">Doctor Name:</label> -->
+                        <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Sign Up">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus velit. Iusto deserunt tempore
+                quos quas aperiam autem odit ea, dignissimos laudantium quibusdam rerum, expedita officiis dicta! Modi,
+                vero nesciunt.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

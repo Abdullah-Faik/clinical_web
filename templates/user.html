@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+    <header>
+        <div class="headerclass">
+            <nav class=".navbar">
+                <img src="/static/img/Medical.png" alt="Medical logo" />
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="service">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="signbutton">
+                <a href="user"><button class="btn-signin">{{patient_data['name']}}</button></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="register-form">
+                <div class="userCard">
+                    <h2>Welcome , {{patient_data['name']}} </h2> 
+                    <div class="userInfo">
+                        <p class="base_info">name :  {{patient_data['name']}}</p>
+                        <p>E-mail : {{patient_data['email']}}</p>
+                        <p>Phone : {{patient_data['phone']}}</p> 
+                        <p>Address : {{patient_data['address']}}</p> 
+                        <p>Birthday : {{patient_data['dob']}}</p>
+                    </div>
+                </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus velit. Iusto deserunt tempore
+                quos quas aperiam autem odit ea, dignissimos laudantium quibusdam rerum, expedita officiis dicta! Modi,
+                vero nesciunt.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

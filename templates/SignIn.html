@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+    <header>
+        <div class="headerclass">
+            <nav class=".navbar">
+                <img src="/static/img/Medical.png" alt="Medical logo" />
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="service">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="signbutton">
+                <a href="signin"><button class="btn-signin">Sign In</button></a>
+                <a href="signup"><button class="btn-signup">Sign Up</button></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="register-form">
+                <form action="#" method="post">
+                    <h2>Sign In</h2>
+                    <div class="input-box">
+                        <!-- <label for="doctor">Doctor Name:</label> -->
+                        <input type="email" id="email" name="email" placeholder="email@gmail.com" required>
+                    </div>
+                    <div class="input-box">
+                        <!-- <label for="doctor">Doctor Name:</label> -->
+                        <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Sign In">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus velit. Iusto deserunt tempore
+                quos quas aperiam autem odit ea, dignissimos laudantium quibusdam rerum, expedita officiis dicta! Modi,
+                vero nesciunt.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
